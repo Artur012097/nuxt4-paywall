@@ -1,75 +1,50 @@
-# Nuxt Minimal Starter
+# Mobile Paywall — Nuxt 4 Application
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Мобильный пейволл для детской игры с продуманной декомпозированной архитектурой, серверной валидацией, персистентным хранением данных в SQLite и нативным UX.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## 🚀 Стек технологий
+* **Фронтенд:** Nuxt 4, TypeScript, Tailwind CSS, Vue 3 Composition API.
+* **Бэкенд:** Nitro Server Routes (`/api/offers`, `/api/purchase`, `/api/restore`).
+* **База данных:** SQLite (`better-sqlite3`) с изолированным репозиторным паттерном (`server/repositories/`).
 
-```bash
-# npm
-npm install
+---
 
-# pnpm
-pnpm install
+## 📁 Структура проекта
+* `app.vue` — главный мобильный экран пейволла, содержащий адаптивную верстку под мобильную ширину (360–430 px) и систему модальных окон (подтверждение восстановления с превью и экран успеха с деталями транзакции).
+* `composables/` — разделенная и чистая бизнес-логика:
+  * `usePaywall.ts` — управление списком тарифов, выбранным оффером, состояниями загрузки и покупки.
+  * `useRestore.ts` — специализированный модуль для проверки устройства (`deviceId`), запроса ранее оформленных подписок и предпросмотра данных в модалке до их применения.
+* `server/` — серверный слой Nuxt:
+  * `api/` — эндпоинты обработки запросов.
+  * `repositories/` — надежная работа с базой данных `paywall.db`.
 
-# yarn
-yarn install
+---
 
-# bun
-bun install
-```
+## 🛠 Как запустить проект локально
 
-## Development Server
+1. Установите зависимости:
+   ```bash
+   npm install
+   ```
+2. При необходимости очистите кэш сборщика (если стили Tailwind в дочерних компонентах требуют обновления):
+   ```bash
+   npx nuxi cleanup
+   ```
+3. Запустите проект в режиме разработки:
+   ```bash
+   npm run dev
+   ```
 
-Start the development server on `http://localhost:3000`:
+---
 
-```bash
-# npm
-npm run dev
+## 🗄 Детали архитектуры и деплой
+* **База данных:** Выбрана **SQLite (`better-sqlite3`)**, так как она обеспечивает мгновенный локальный запуск, не требует внешних сервисов авторизации и идеально подходит для демонстрации server routes в Nuxt.
+* **Деплой:** Приложение готово к деплою на любую хостинг-платформу, поддерживающую Node.js / Nitro (например, Render, Fly.io или Vercel с подключением persistent storage для SQLite).
 
-# pnpm
-pnpm dev
+---
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 🤖 Использование AI-инструментов и верификация
+* **AI-ассистент:** Использовался для проектирования декомпозированной архитектуры компосаблов (`usePaywall` / `useRestore`), настройки репозиторного слоя и устранения проблем с компиляцией стилей Tailwind.
+* **Проверка:** Каждый сценарий (покупка тарифного плана, идентификация через `deviceId` в `localStorage`, двухшаговое восстановление подписки с предпросмотром данных из БД) успешно протестирован.
