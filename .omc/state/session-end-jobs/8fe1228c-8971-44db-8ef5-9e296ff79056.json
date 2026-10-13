@@ -1,0 +1,321 @@
+{
+  "version": 1,
+  "jobId": "b7fbf889-fc78-4aaf-a714-aa85bdc158bd",
+  "sessionId": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+  "scopeKey": "98e242b163d87c207552a6e6adc19ac1f738cf1bc80aba78267a480d043944ab",
+  "revision": 41,
+  "createdAt": "2026-10-13T14:31:14.525Z",
+  "updatedAt": "2026-10-13T14:31:15.380Z",
+  "producerGraceExpiresAt": "2026-10-13T14:31:44.525Z",
+  "bestEffortDeadlineAt": "2026-10-13T14:32:35.525Z",
+  "producers": {
+    "core": {
+      "state": "sealed",
+      "intentKey": "4b7c28ca60dadbe3abd9a8ce5b950c5d671e12d0ae88e9b1291ea87ce3d39458",
+      "payloadDigest": "4b7c28ca60dadbe3abd9a8ce5b950c5d671e12d0ae88e9b1291ea87ce3d39458",
+      "sealedAt": "2026-10-13T14:31:14.568Z",
+      "sealedBy": "foreground"
+    },
+    "wiki": {
+      "state": "no-op",
+      "sealedAt": "2026-10-13T14:31:14.525Z",
+      "sealedBy": "wiki-producer"
+    }
+  },
+  "actions": {
+    "foreground-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "febf6dba2f2536433960a07f7cedce72e946b43ced0896570df80f017b8914d2",
+      "payload": {
+        "transcriptPath": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+        "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+        "reason": "other",
+        "input": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "transcript_path": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+          "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "ended_at": "2026-10-13T14:31:14.524Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {},
+        "foregroundResult": {
+          "removedTransientFiles": 0,
+          "completedAt": "2026-10-13T14:31:14.568Z"
+        }
+      },
+      "budgetMs": 9000,
+      "completedAt": "2026-10-13T14:31:14.568Z",
+      "lastOutcomeCode": "completed"
+    },
+    "wiki-capture": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "1719cd1ef5b51e0269b78c4cb8c9308c9c1f7b82fd1c067fc034c060f23863f5",
+      "payload": {},
+      "budgetMs": 9000,
+      "completedAt": "2026-10-13T14:31:14.525Z"
+    },
+    "team-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "cee6ac31df545408e1e822247ac249b3f8182a98a5fe8e448ae3b251e55bdee1",
+      "payload": {
+        "transcriptPath": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+        "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+        "reason": "other",
+        "input": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "transcript_path": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+          "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "ended_at": "2026-10-13T14:31:14.524Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-10-13T14:31:14.601Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "0c74bd1e-8f97-493d-831d-7f420abedd7d",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-13T14:31:24.574Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-13T14:31:14.709Z"
+    },
+    "python-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "1f1370c4ac056606059d517e2f106b602d8cbcb04587b3fcc5f3b9f89e649cd0",
+      "payload": {
+        "transcriptPath": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+        "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+        "reason": "other",
+        "input": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "transcript_path": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+          "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "ended_at": "2026-10-13T14:31:14.524Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-10-13T14:31:14.729Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "075e88d0-6683-4324-a50d-06023d96e16a",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-13T14:31:24.574Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-13T14:31:14.849Z"
+    },
+    "reply-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "0b3a8b47c28b26d56aca004d4f572b96c118f16819c0d35162418816f9a5420a",
+      "payload": {
+        "transcriptPath": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+        "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+        "reason": "other",
+        "input": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "transcript_path": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+          "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "ended_at": "2026-10-13T14:31:14.524Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-10-13T14:31:14.868Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "e8b2b5ea-9f4e-460a-b926-dce81b54a2f4",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-13T14:31:24.574Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-13T14:31:14.979Z"
+    },
+    "callback": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "d068ede2655bf89e0c0950e087d0603d7dcf45538e94f20a654d08c6f4841895",
+      "payload": {
+        "transcriptPath": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+        "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+        "reason": "other",
+        "input": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "transcript_path": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+          "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "ended_at": "2026-10-13T14:31:14.524Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-10-13T14:31:14.998Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "8f8f2b3a-fda2-4719-9ff7-bcaf5e8c1c0b",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-13T14:31:24.574Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-13T14:31:15.097Z"
+    },
+    "notification": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "89c0438ff63097ce04beb60efb87292ff68a7af350a0ee331f3de9dbf42d62fc",
+      "payload": {
+        "transcriptPath": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+        "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+        "reason": "other",
+        "input": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "transcript_path": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+          "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "ended_at": "2026-10-13T14:31:14.524Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-10-13T14:31:15.116Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "3e5b5bb7-7698-42b1-96e6-e72aa9f65366",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-13T14:31:24.574Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-13T14:31:15.219Z"
+    },
+    "openclaw": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "31fe8f6e1cf204e27006de511df257326fdd98655122ca437013e8779ffc735b",
+      "payload": {
+        "transcriptPath": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+        "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+        "reason": "other",
+        "input": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "transcript_path": "/Users/artur/.claude/projects/-Users-artur-Desktop-nuxt4-paywall/8fe1228c-8971-44db-8ef5-9e296ff79056.jsonl",
+          "cwd": "/Users/artur/Desktop/nuxt4-paywall",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+          "ended_at": "2026-10-13T14:31:14.524Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-10-13T14:31:15.239Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "ddf6db4a-7d61-4bc8-9892-f8331a9f33d9",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-13T14:31:24.574Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-13T14:31:15.344Z"
+    }
+  },
+  "owner": null,
+  "phase": "complete",
+  "completion": {
+    "completedAt": "2026-10-13T14:31:15.363Z",
+    "terminalDigest": "496f93efdcaf951c8c48bd8f89e6865f941e1c6aa54cc2e45b7d5593fe9cf62d",
+    "terminalRevision": 40
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "cursor": 0,
+  "tickets": [
+    {
+      "sessionId": "8fe1228c-8971-44db-8ef5-9e296ff79056",
+      "attempts": 0,
+      "retryAt": "2026-10-13T14:31:14.538Z",
+      "acknowledgedAt": "2026-10-13T14:31:15.389Z"
+    },
+    {
+      "sessionId": "750e9837-5c00-4c66-9cc2-80456c2be642",
+      "attempts": 0,
+      "retryAt": "2026-10-13T14:32:15.049Z",
+      "acknowledgedAt": "2026-10-13T14:32:15.898Z"
+    }
+  ]
+}
