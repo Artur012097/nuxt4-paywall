@@ -25,7 +25,7 @@ const {
 </script>
 
 <template>
-  <div class="relative w-full max-w-md mx-auto min-h-screen bg-slate-950 text-white flex flex-col justify-between p-6 overflow-hidden font-sans">
+  <div class="relative w-full max-w-[360px] mx-auto min-h-screen bg-slate-950 text-white flex flex-col justify-between p-6 overflow-hidden font-sans">
     
     <!-- Верхняя панель / Хедер -->
     <PaywallPromoHeader />
